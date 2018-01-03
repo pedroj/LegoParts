@@ -1,0 +1,8 @@
+colors <- readr::read_csv("colors.csv")
+inventories <- readr::read_csv("inventories.csv")
+inventory_parts <- readr::read_csv("inventory_parts.csv")
+inventory_sets <- readr::read_csv("inventory_sets.csv")
+part_categories <- readr::read_csv("part_categories.csv")
+parts <- readr::read_csv("parts.csv")
+sets <- readr::read_csv("sets.csv")
+themes <- readr::read_csv("themes.csv")

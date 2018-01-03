@@ -1,0 +1,9 @@
+Package: LegoParts
+Title: Lego Parts Data
+Version: 0.0.0.9000
+Authors@R: person("Stephen", "Kaluzny", email = "spkaluzny@gmail.com", role = c("aut", "cre"))
+Description: Lego parts data.
+Depends: R (>= 3.4.2)
+License: Artistic
+Encoding: UTF-8
+LazyData: true
