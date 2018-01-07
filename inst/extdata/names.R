@@ -5,10 +5,10 @@ dim(inventories)
 names(inventories)
 #
 dim(inventory_parts)
-names(inventories_parts)
+names(inventory_parts)
 #
 dim(inventory_sets)
-names(inventories_sets)
+names(inventory_sets)
 #
 dim(part_categories)
 names(part_categories)
