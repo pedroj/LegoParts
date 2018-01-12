@@ -21,3 +21,26 @@ dim(dleft02)
 names(dleft02)
 ## [1] "inventory_id" "part_num"     "color_id"     "quantity"     "is_spare"
 ## [6] "version"      "set_num"      "name"         "part_cat_id"
+
+dleft03 <- left_join(dleft02, part_categories, by=c("part_cat_id"="id"))
+dim(dleft03)
+## [1] 612618      10
+names(dleft03)
+## [1] "inventory_id" "part_num"     "color_id"     "quantity"     "is_spare"
+## [6] "version"      "set_num"      "name.x"       "part_cat_id"  "name.y"
+dleft03 <- rename(dleft03, "part_name"=name.x, "part_category"=name.y)
+names(dleft03)
+## [1] "inventory_id"  "part_num"      "color_id"      "quantity"     
+## [5] "is_spare"      "version"       "set_num"       "part_name"    
+## [9] "part_cat_id"   "part_category"
+
+dleft04 <- left_join(dleft03, colors, by=c("color_id"="id"))
+dim(dleft04)
+## [1] 612618     13
+names(dleft04)
+## [1] "inventory_id"  "part_num"      "color_id"      "quantity"
+## [5] "is_spare"      "version"       "set_num"       "part_name"
+## [9] "part_cat_id"   "part_category" "name"          "rgb"
+## [13] "is_trans"
+dleft04 <- rename(dleft04, color_name="name")
+
