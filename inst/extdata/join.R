@@ -1,3 +1,11 @@
+# Joins:
+# 1 inventory_parts, inventories
+# 2 . , parts
+# 3 . , part_categories
+# 4 . , colors
+# 5 . , sets
+# 6 . , themes
+
 library("dplyr")
 dleft <- left_join(inventory_parts, inventory_sets, by="inventory_id")
 dim(dleft)
@@ -6,7 +14,6 @@ names(dleft)
 ## [1] "inventory_id" "part_num"     "color_id"     "quantity.x"   "is_spare"
 ## [6] "set_num"      "quantity.y"
 dleft <- left_join(sets, inventory_sets, by="set_num")
-
 
 dleft01 <- left_join(inventory_parts, inventories, by=c("inventory_id" = "id"))
 dim(dleft01)
@@ -44,3 +51,23 @@ names(dleft04)
 ## [13] "is_trans"
 dleft04 <- rename(dleft04, color_name="name")
 
+dleft05 <- left_join(dleft04, sets, by="set_num")
+dim(dleft05)
+## [1] 612618     17
+names(dleft05)
+## [1] "inventory_id"  "part_num"      "color_id"      "quantity"     
+## [5] "is_spare"      "version"       "set_num"       "part_name"    
+## [9] "part_cat_id"   "part_category" "color_name"    "rgb"          
+## [13] "is_trans"      "name"          "year"          "theme_id"     
+## [17] "num_parts"
+
+dleft06 <- left_join(dleft05, themes, by=c("theme_id" = "id"))
+dim(dleft06)
+## [1] 612618     19
+names(dleft06)
+## [1] "inventory_id"  "part_num"      "color_id"      "quantity"
+## [5] "is_spare"      "version"       "set_num"       "part_name"
+## [9] "part_cat_id"   "part_category" "color_name"    "rgb"
+## [13] "is_trans"      "name.x"        "year"          "theme_id"
+## [17] "num_parts"     "name.y"        "parent_id"
+dleft06 <- rename(dleft06, "set_name"=name.x, "theme"=name.y)
