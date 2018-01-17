@@ -1,5 +1,6 @@
 # Joins:
-# 1 inventory_parts, inventories
+# 0 inventory_parts
+# 1 . , inventories
 # 2 . , parts
 # 3 . , part_categories
 # 4 . , colors
@@ -71,3 +72,9 @@ names(dleft06)
 ## [13] "is_trans"      "name.x"        "year"          "theme_id"
 ## [17] "num_parts"     "name.y"        "parent_id"
 dleft06 <- rename(dleft06, "set_name"=name.x, "theme"=name.y)
+names(dleft06)
+##  [1] "inventory_id"  "part_num"      "color_id"      "quantity"
+##  [5] "is_spare"      "version"       "set_num"       "part_name"
+##  [9] "part_cat_id"   "part_category" "color_name"    "rgb"
+##  [13] "is_trans"      "set_name"      "year"          "theme_id"
+##  [17] "num_parts"     "theme"         "parent_id"
