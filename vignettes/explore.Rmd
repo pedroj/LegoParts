@@ -1,0 +1,22 @@
+---                                                                             
+title: "Exploring LegoParts"
+author: "Stephen Kaluzny"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Exploring LegoParts}
+    %\VignetteEngine{knitr::rmarkdown}
+	  \usepackage[utf8]{inputenc}
+	  ---
+
+```{r, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+options(tibble.print_min = 4L, tibble.print_max = 4L)
+library(dplyr)
+library(ggplot2)
+```
+Initial look at the data.
+```{r, load}
+library("LegoParts")
+names(lego_parts)
+str(lego_parts)
+```
