@@ -363,7 +363,7 @@ id,name,parent_id
 362,Toa Okoto,324
 363,Boat,
 364,Building Set with People,
-365,Classic,
+365,System,
 366,Basic Set,365
 367,Building,365
 368,HO 1:87 Vehicles,365
@@ -389,12 +389,6 @@ id,name,parent_id
 388,Disney's Mickey Mouse,
 389,Exo-Force,
 390,Fabuland,
-391,Hospital,390
-392,Post Office,390
-393,Harbor,390
-394,Airport,390
-395,Fire,390
-396,Police,390
 397,Factory,
 398,FIRST LEGO League,
 399,Freestyle,
@@ -514,7 +508,7 @@ id,name,parent_id
 513,Classic,507
 514,Creator,507
 515,Dinosaurs,507
-516,Explore,507
+516,Duplo and Explore,507
 517,Learning,507
 518,Mindstorms,507
 519,NXT,518
@@ -618,3 +612,57 @@ id,name,parent_id
 617,DC Super Hero Girls,
 618,Ninjago The Movie,535
 619,Cities of Wonders,408
+620,Jurassic World: Fallen Kingdom,591
+621,Classic,
+622,Series 18 Minifigures,535
+624,Solo,158
+625,Unikitty!,
+626,Bob the Builder,504
+627,Disney Planes,504
+628,Dora the Explorer,504
+629,Miles From Tomorrowland,504
+630,Spiderman,504
+631,Thomas & Friends,504
+632,Town,504
+633,Toy Story,504
+634,Trains,504
+635,Winnie the Pooh,504
+636,Airport,632
+637,Circus,632
+638,Jake and the Never Land Pirates,504
+639,Sofia the First,504
+640,Disney Princess,504
+641,Disney's Mickey Mouse,504
+642,Construction,632
+643,Farm,632
+644,Fire,632
+645,Zoo,632
+646,Xtra,
+647,Castle,504
+648,Doc McStuffins,504
+649,Hospital,632
+650,Police,632
+651,Pirates,504
+652,Playhouse,504
+653,DC Comics,504
+654,The Powerpuff Girls,
+655,Powered Up,438
+656,Harry Potter and Fan﻿tastic Beasts,535
+657,Action Wheelers,504
+658,Dino,504
+659,Dolls,504
+660,Little Forest Friends,504
+661,Little Robots,504
+662,Princess Castle,504
+663,Rattles,504
+664,Toolo,504
+665,Western,504
+666,Zooters,504
+667,Fantastic Beasts,246
+668,Scala,
+669,Overwatch,
+670,The LEGO Movie II,578
+671,Forma,
+672,Creator 3-in-1,22
+673,Creator Expert,22
+674,Early Creator,22
